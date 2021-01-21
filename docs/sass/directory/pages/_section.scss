@@ -1,0 +1,103 @@
+#pages{
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $color-base-primary;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        img{
+            max-height: 275px;
+        }
+    }
+    .menuTitre {
+        position: relative;
+        &__text {
+            background-color: $color-base-primary;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: -50px;
+            margin-bottom: -50px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            font-size: 1.6em;
+            padding: 25px 0 0;
+            h1 {
+                padding: 0 0 0 20px;
+            }
+            i {
+                padding: 0 40px 0 0;
+            }
+        }
+    }
+    .container {
+        margin: 45px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        &__titre {
+            font-weight: 300;
+            &::after{
+                content:"";
+                display: block;
+                width: 40px;
+                margin-top: 5px;
+                border-bottom: 3px solid $color-anim-tertiary;
+            }
+        }
+        
+        .element {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: auto;
+            background-color: white;
+            margin: 10px 0;
+            &__menu{
+                width: 100%;
+                display: flex;
+                padding: 10px 15px;
+                &__description {
+                    width: 80%;
+                    h3 {
+                        width: 130%;
+                        font-size: 1.2em;
+                        font-weight: 700;
+                        padding-bottom: 5px;
+                    }
+                    p {
+                        font-weight: 300;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+                &__price {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: 30%;
+                    strong {
+                        color: $color-base-tertiary;
+                    }
+                }
+                &__icon {
+                    display: none;
+                    // background-color: #99e2d0;
+                    // margin: -1rem -5rem -1rem 1rem;
+                    // width: 4rem;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                }
+            }
+        }
+    }
+    
+}

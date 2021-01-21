@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: Roboto;
+  color: black;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: Shrikhand;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+#location {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #353535;
+}
+#location i {
+  color: #353535;
+}
+
+.button {
+  width: 50%;
+  margin: 35px auto;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px #b4b4b4;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(to bottom right, #FF79DA 0%, #9256dc 100%);
+  color: white;
+}
+
+header {
+  background-color: #EAEAEA;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  box-shadow: 0px 0px 5px #b4b4b4;
+  background-color: white;
+}
+#logo img {
+  width: 45%;
+  margin: 0px auto;
+  padding: 22px 0 10px;
+}
+
+#location {
+  padding: 10px 0px;
+}
+#location i {
+  position: relative;
+  left: -18px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+nav h2 {
+  width: 70%;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+nav h3 {
+  padding: 10px 10px 0;
+}
+
+section {
+  padding: 0 20px 40px;
+  margin: 0;
+}
+section h2 {
+  padding: 40px 0 25px;
+}
+
+#fonctionnement ol {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+  counter-reset: li;
+}
+#fonctionnement li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  counter-increment: li;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  box-shadow: 0 5px 10px #b4b4b4;
+}
+#fonctionnement li::before {
+  content: counter(li);
+  color: white;
+  display: inline-block;
+  background-color: #9256dc;
+  border-radius: 100%;
+  padding: 2px 7px;
+  position: relative;
+  left: -10px;
+}
+#fonctionnement li:hover {
+  background-color: #f4ebff;
+}
+#fonctionnement li:hover i {
+  color: #9256dc;
+}
+#fonctionnement i {
+  font-size: 1.2em;
+  padding: 0 25px 0 15px;
+  color: #7E7E7E;
+}
+
+#restaurant {
+  background-color: #F6F6F6;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 25px;
+}
+footer * {
+  color: white;
+}
+footer a {
+  text-decoration: none;
+}
+footer h4, footer h4 a {
+  font-family: Shrikhand;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+footer ul li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+footer i {
+  width: 0;
+  font-size: 0.8em;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element {
+  width: 100%;
+  height: 250px;
+  box-shadow: 0px 5px 10px #b4b4b4;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  position: relative;
+}
+.element img {
+  height: 175px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.element--new {
+  background-color: #98e2cf;
+  color: #008563;
+  padding: 7.5px 15px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  margin: 15px;
+  right: 0;
+}
+.element__description {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.element__description__text {
+  width: 90%;
+  padding-left: 15px;
+}
+.element__description i {
+  width: 10%;
+  font-size: 1.5em;
+  padding-right: 25px;
+}
+.element .fas {
+  display: none;
+}
+.element i:hover {
+  color: green;
+}
+.element a {
+  text-decoration: none;
+}
+
+#pages header {
+  background-color: #EAEAEA;
+  text-align: center;
+}
+#pages header nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+#pages header nav a {
+  position: absolute;
+  left: 25px;
+}
+#pages header nav img {
+  width: 50%;
+}
+#pages header nav i {
+  font-size: 1.5em;
+}
+
+#pages main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #EAEAEA;
+}
+#pages section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#pages section img {
+  max-height: 275px;
+}
+#pages .menuTitre {
+  position: relative;
+}
+#pages .menuTitre__text {
+  background-color: #EAEAEA;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  font-size: 1.6em;
+  padding: 25px 0 0;
+}
+#pages .menuTitre__text h1 {
+  padding: 0 0 0 20px;
+}
+#pages .menuTitre__text i {
+  padding: 0 40px 0 0;
+}
+#pages .container {
+  margin: 45px 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+#pages .container__titre {
+  font-weight: 300;
+}
+#pages .container__titre::after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin-top: 5px;
+  border-bottom: 3px solid #98e2cf;
+}
+#pages .container .element {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  background-color: white;
+  margin: 10px 0;
+}
+#pages .container .element__menu {
+  width: 100%;
+  display: flex;
+  padding: 10px 15px;
+}
+#pages .container .element__menu__description {
+  width: 80%;
+}
+#pages .container .element__menu__description h3 {
+  width: 130%;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+#pages .container .element__menu__description p {
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#pages .container .element__menu__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 30%;
+}
+#pages .container .element__menu__price strong {
+  color: #353535;
+}
+#pages .container .element__menu__icon {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

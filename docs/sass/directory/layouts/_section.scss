@@ -1,0 +1,57 @@
+section {
+    padding: 0 20px 40px;
+    margin: 0;
+    h2 {
+        padding: 40px 0 25px;
+    }
+}
+
+#fonctionnement {
+    ol {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        text-align: center;
+        margin: 0 auto;
+        list-style: none;
+        counter-reset: li;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 70px;
+        counter-increment: li;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: bold;
+        background-color: $color-base-secondary;
+        box-shadow: 0 5px 10px $shadow;
+        &::before {
+            content: counter(li);
+            color: white;
+            display: inline-block;
+            background-color: $color-anim-primary;
+            border-radius: 100%;
+            padding: 2px 7px;
+            position: relative;
+            left: -10px;
+        }
+        &:hover{
+            background-color: $color-anim-primary-hover;
+            i{
+                color: $color-anim-primary;
+            }
+        }
+    }
+    i {
+        font-size: 1.2em;
+        padding: 0 25px 0 15px;
+        color: $color-iframe;
+    }
+}
+
+#restaurant {
+    background-color: $color-base-secondary;
+}

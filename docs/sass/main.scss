@@ -1,0 +1,18 @@
+// BASE
+@import "./directory/base/base.scss";
+
+// UTILS
+@import "./directory/utils/colors.scss";
+@import "./directory/utils/font.scss";
+@import "./directory/utils/variables.scss";
+@import "./directory/utils/button.scss";
+
+// LAYOUT
+@import "./directory/layouts/header.scss";
+@import "./directory/layouts/section.scss";
+@import "./directory/layouts/footer.scss";
+@import "./directory/layouts/cards.scss";
+
+//PAGES
+@import "./directory/pages/header.scss";
+@import "./directory/pages/section.scss";

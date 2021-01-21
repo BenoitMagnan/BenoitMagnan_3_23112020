@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-base-tertiary;
+    padding: 25px;
+    * {
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+    h4, h4 a{
+        font-family: Shrikhand;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    ul li{
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
+    i {
+        width: 0;
+        font-size: 0.8em;
+        margin-right: 20px; 
+    }
+}

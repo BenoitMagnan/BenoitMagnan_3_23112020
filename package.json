@@ -1,0 +1,24 @@
+{
+  "name": "benoitmagnan_3_04012021",
+  "version": "1.0.0",
+  "description": "Projet OpenClassrooms OHMYFOOD",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass":"sass --watch ./docs/sass/main.scss:./docs/public/css/style.css",
+    "prefix": "postcss ./docs/public/css/style.css --use autoprefixer -d ./docs/public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perceaurore/BenoitMagnan_3_04012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Perceaurore/BenoitMagnan_3_04012021/issues"
+  },
+  "homepage": "https://github.com/Perceaurore/BenoitMagnan_3_04012021#readme"
+}
