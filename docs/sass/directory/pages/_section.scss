@@ -38,7 +38,7 @@
                 & .fas{
                     position: absolute;
                     top:2px;
-                    left: -1px;
+                    left: -0.5px;
                 }
             }
         }
@@ -46,7 +46,6 @@
 
 
     .container {
-        
         padding: 45px 15px 0px;
         display: flex;
         flex-direction: column;
@@ -80,7 +79,7 @@
                 &__description {
                     width: 100%;
                     h3 {
-                        width: 100%;
+                        width: 95%;
                         font-size: 1.2em;
                         font-weight: 700;
                         padding-bottom: 5px;
@@ -100,8 +99,8 @@
                     display: flex;
                     justify-self: flex-end;
                     align-items: flex-end;
-                    margin-left: -30px;
-                    padding: 0 15px;
+                    margin-left: -15px;
+                    padding: 0 15px 0 5px;
                     background-color: white;
                     strong {
                         color: $color-base-tertiary;
@@ -127,7 +126,7 @@
             &:hover{
                 .element__menu__description {
                     transition: all 0.4s ease-in-out;
-                    margin-right: -95px;
+                    margin-right: -100px;
                     h3, p{
                         transition: all 0.4s ease-in-out;
                         width: 55vw;
