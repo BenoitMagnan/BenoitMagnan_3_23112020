@@ -13,7 +13,6 @@
         }
     }
     .menuTitre {
-        position: relative;
         &__text {
             background-color: $color-base-primary;
             width: 100%;
@@ -30,8 +29,12 @@
             h1 {
                 padding: 0 0 0 20px;
             }
-            i {
-                padding: 0 40px 0 0;
+            .heart {
+                margin-right: 40px;
+                & .fas{
+                    position: absolute;
+                    top:2px;
+                }
             }
         }
     }

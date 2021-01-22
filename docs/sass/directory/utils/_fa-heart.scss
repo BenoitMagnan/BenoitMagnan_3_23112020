@@ -1,9 +1,33 @@
-.fa-heart{
-    &:hover{
-        transition: all 0.33s;
-        font-weight: 700;
+.heart{
+    position: relative;
+    .far {
+        color: black;
+        opacity: 1;
+    }
+    .fas {
         background: linear-gradient(to bottom, $color-anim-primary 0%, $color-anim-secondary 100%);
-        -webkit-text-fill-color: transparent; 
-        background-clip: text; 
+        background:-moz-linear-gradient(bottom, $color-anim-primary 0%, $color-anim-secondary 100%); 
+        background: -webkit-linear-gradient(top, $color-anim-primary 0%, $color-anim-secondary 100%); 
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        opacity:0;
+    }
+    &:hover{
+        
+        .far{
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .fas{
+            opacity: 1;
+            transition: all 0.2s;
+        }
     }
 }

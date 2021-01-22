@@ -75,12 +75,35 @@ h4 {
   opacity: 0.8;
 }
 
-.fa-heart:hover {
-  transition: all 0.33s;
-  font-weight: 700;
+.heart {
+  position: relative;
+}
+.heart .far {
+  color: black;
+  opacity: 1;
+}
+.heart .fas {
   background: linear-gradient(to bottom, #9256dc 0%, #FF79DA 100%);
-  -webkit-text-fill-color: transparent;
+  background: -moz-linear-gradient(bottom, #9256dc 0%, #FF79DA 100%);
+  background: -webkit-linear-gradient(top, #9256dc 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.heart:hover .far {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.heart:hover .fas {
+  opacity: 1;
+  transition: all 0.2s;
 }
 
 header {
@@ -290,9 +313,6 @@ footer i {
 #pages section img {
   max-height: 275px;
 }
-#pages .menuTitre {
-  position: relative;
-}
 #pages .menuTitre__text {
   background-color: #EAEAEA;
   width: 100%;
@@ -310,8 +330,12 @@ footer i {
 #pages .menuTitre__text h1 {
   padding: 0 0 0 20px;
 }
-#pages .menuTitre__text i {
-  padding: 0 40px 0 0;
+#pages .menuTitre__text .heart {
+  margin-right: 40px;
+}
+#pages .menuTitre__text .heart .fas {
+  position: absolute;
+  top: 2px;
 }
 #pages .container {
   margin: 45px 15px 0px;
