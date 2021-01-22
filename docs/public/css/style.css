@@ -68,6 +68,19 @@ h4 {
   text-align: center;
   background: linear-gradient(to bottom right, #FF79DA 0%, #9256dc 100%);
   color: white;
+  transition: all 0.2s;
+}
+.button:hover {
+  background: linear-gradient(to bottom right, #FF79DA 0%, #9256dc 100%);
+  opacity: 0.8;
+}
+
+.fa-heart:hover {
+  transition: all 0.33s;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #9256dc 0%, #FF79DA 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 header {
@@ -237,12 +250,6 @@ footer i {
   font-size: 1.5em;
   padding-right: 25px;
 }
-.element .fas {
-  display: none;
-}
-.element i:hover {
-  color: green;
-}
 .element a {
   text-decoration: none;
 }
@@ -323,13 +330,15 @@ footer i {
 }
 #pages .container .element {
   width: 100%;
+  max-width: 350px;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: auto;
   background-color: white;
-  margin: 10px 0;
+  overflow: hidden;
 }
 #pages .container .element__menu {
   width: 100%;
@@ -337,13 +346,16 @@ footer i {
   padding: 10px 15px;
 }
 #pages .container .element__menu__description {
-  width: 80%;
+  width: 280px;
 }
 #pages .container .element__menu__description h3 {
-  width: 130%;
+  width: 100%;
   font-size: 1.2em;
   font-weight: 700;
   padding-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #pages .container .element__menu__description p {
   font-weight: 300;
@@ -353,15 +365,35 @@ footer i {
 }
 #pages .container .element__menu__price {
   display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
   align-items: flex-end;
-  width: 30%;
+  background-color: white;
+  padding-left: 10px;
 }
 #pages .container .element__menu__price strong {
   color: #353535;
+  text-align: right;
 }
 #pages .container .element__menu__icon {
-  display: none;
+  background-color: #98e2cf;
+  margin: -10px -80px -10px 15px;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pages .container .element__menu__icon .fas {
+  color: white;
+  font-size: 1.5em;
+  transform: rotate(90deg);
+}
+#pages .container .element:hover .element__menu__description {
+  width: 215px;
+  transition: all 0.4s ease-in-out;
+}
+#pages .container .element:hover .fas {
+  transform: rotate(360deg);
+  transition: all 0.4s ease-in-out 0.1s;
 }
 
 /*# sourceMappingURL=style.css.map */

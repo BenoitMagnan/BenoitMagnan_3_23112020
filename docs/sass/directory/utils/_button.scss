@@ -8,4 +8,9 @@
     text-align: center;
     background: linear-gradient(to bottom right, $color-anim-secondary 0%, $color-anim-primary 100%);
     color: white;
+    transition: all 0.2s;
+    &:hover{
+        background: linear-gradient(to bottom right, $color-anim-secondary 0%, $color-anim-primary 100%);
+        opacity: 0.8;
+    }
 }

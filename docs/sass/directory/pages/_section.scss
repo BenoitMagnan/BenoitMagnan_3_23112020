@@ -52,24 +52,30 @@
         
         .element {
             width: 100%;
+            max-width: 350px;
+            margin: 10px 0;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             height: auto;
             background-color: white;
-            margin: 10px 0;
+            overflow: hidden;
             &__menu{
                 width: 100%;
+                
                 display: flex;
                 padding: 10px 15px;
                 &__description {
-                    width: 80%;
+                    width: 280px;
                     h3 {
-                        width: 130%;
+                        width: 100%;
                         font-size: 1.2em;
                         font-weight: 700;
                         padding-bottom: 5px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis; 
                     }
                     p {
                         font-weight: 300;
@@ -80,21 +86,37 @@
                 }
                 &__price {
                     display: flex;
-                    justify-content: flex-end;
+                    justify-self: flex-end;
                     align-items: flex-end;
-                    width: 30%;
+                    background-color: white;
+                    padding-left: 10px;
                     strong {
                         color: $color-base-tertiary;
+                        text-align: right;
                     }
                 }
                 &__icon {
-                    display: none;
-                    // background-color: #99e2d0;
-                    // margin: -1rem -5rem -1rem 1rem;
-                    // width: 4rem;
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: center;
+                    background-color: $color-anim-tertiary;
+                    margin: -10px -80px -10px 15px;
+                    width: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    .fas {
+                        color: white;
+                        font-size: 1.5em;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            &:hover{
+                .element__menu__description{
+                    width: 215px;
+                    transition: all 0.4s ease-in-out ;
+                }
+                .fas{
+                    transform: rotate(360deg);
+                    transition: all 0.4s ease-in-out 0.1s;
                 }
             }
         }
