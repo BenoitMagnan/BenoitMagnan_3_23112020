@@ -340,9 +340,10 @@ footer i {
   left: -1px;
 }
 #pages .container {
-  margin: 45px 15px 0px;
+  padding: 45px 15px 0px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 #pages .container__titre {
   font-weight: 300;
@@ -356,7 +357,7 @@ footer i {
 }
 #pages .container .element {
   width: 100%;
-  max-width: 350px;
+  height: 100%;
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
@@ -369,10 +370,10 @@ footer i {
 #pages .container .element__menu {
   width: 100%;
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 0 15px 15px;
 }
 #pages .container .element__menu__description {
-  width: 85%;
+  width: 100%;
 }
 #pages .container .element__menu__description h3 {
   width: 100%;
@@ -380,10 +381,11 @@ footer i {
   font-weight: 700;
   padding-bottom: 5px;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: wrap;
   text-overflow: ellipsis;
 }
 #pages .container .element__menu__description p {
+  width: 95%;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
@@ -393,17 +395,20 @@ footer i {
   display: flex;
   justify-self: flex-end;
   align-items: flex-end;
+  margin-left: -30px;
+  padding: 0 15px;
   background-color: white;
-  padding: 0 10px;
 }
 #pages .container .element__menu__price strong {
   color: #353535;
   text-align: right;
 }
 #pages .container .element__menu__icon {
+  display: none;
   background-color: #98e2cf;
-  margin: -10px -80px -10px 15px;
-  width: 20%;
+  margin: -10px 0 -15px 0px;
+  margin-right: -65px;
+  width: 67.5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,8 +419,15 @@ footer i {
   transform: rotate(90deg);
 }
 #pages .container .element:hover .element__menu__description {
-  width: 65%;
   transition: all 0.4s ease-in-out;
+  margin-right: -95px;
+}
+#pages .container .element:hover .element__menu__description h3, #pages .container .element:hover .element__menu__description p {
+  transition: all 0.4s ease-in-out;
+  width: 55vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #pages .container .element:hover .fas {
   transform: rotate(360deg);

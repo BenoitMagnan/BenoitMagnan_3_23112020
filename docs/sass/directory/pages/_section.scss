@@ -4,6 +4,8 @@
         flex-wrap: wrap;
         background-color: $color-base-primary;
     }
+
+    
     section {
         width: 100%;
         margin: 0;
@@ -12,6 +14,8 @@
             max-height: 275px;
         }
     }
+
+
     .menuTitre {
         &__text {
             background-color: $color-base-primary;
@@ -39,10 +43,14 @@
             }
         }
     }
+
+
     .container {
-        margin: 45px 15px 0px;
+        
+        padding: 45px 15px 0px;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         &__titre {
             font-weight: 300;
             &::after{
@@ -56,7 +64,7 @@
         
         .element {
             width: 100%;
-            max-width: 350px;
+            height: 100%;
             margin: 10px 0;
             display: flex;
             flex-wrap: wrap;
@@ -68,19 +76,20 @@
             &__menu{
                 width: 100%;
                 display: flex;
-                padding: 10px 15px;
+                padding: 10px 0 15px 15px;
                 &__description {
-                    width: 85%;
+                    width: 100%;
                     h3 {
                         width: 100%;
                         font-size: 1.2em;
                         font-weight: 700;
                         padding-bottom: 5px;
                         overflow: hidden;
-                        white-space: nowrap;
+                        white-space: wrap;
                         text-overflow: ellipsis; 
                     }
                     p {
+                        width: 95%;
                         font-weight: 300;
                         overflow: hidden;
                         white-space: nowrap;
@@ -91,17 +100,20 @@
                     display: flex;
                     justify-self: flex-end;
                     align-items: flex-end;
+                    margin-left: -30px;
+                    padding: 0 15px;
                     background-color: white;
-                    padding: 0 10px;
                     strong {
                         color: $color-base-tertiary;
                         text-align: right;
                     }
                 }
                 &__icon {
+                    display: none;
                     background-color: $color-anim-tertiary;
-                    margin: -10px -80px -10px 15px;
-                    width: 20%;
+                    margin: -10px 0 -15px 0px;
+                    margin-right: -65px;
+                    width: 67.5px;
                     display: flex;
                     align-items: center;
                     justify-content: center; 
@@ -113,9 +125,16 @@
                 }
             }
             &:hover{
-                .element__menu__description{
-                    width: 65%;
-                    transition: all 0.4s ease-in-out ;
+                .element__menu__description {
+                    transition: all 0.4s ease-in-out;
+                    margin-right: -95px;
+                    h3, p{
+                        transition: all 0.4s ease-in-out;
+                        width: 55vw;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
                 }
                 .fas{
                     transform: rotate(360deg);
