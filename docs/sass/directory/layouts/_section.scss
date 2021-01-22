@@ -39,8 +39,10 @@ section {
             left: -10px;
         }
         &:hover{
-            background-color: $color-anim-primary-hover;
+            transition: all 0.2s;
+            background-color: lighten($color-anim-primary, 35%);
             i{
+                transition: all 0.5s;
                 color: $color-anim-primary;
             }
         }

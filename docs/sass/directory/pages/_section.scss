@@ -34,6 +34,7 @@
                 & .fas{
                     position: absolute;
                     top:2px;
+                    left: -1px;
                 }
             }
         }
@@ -66,11 +67,10 @@
             overflow: hidden;
             &__menu{
                 width: 100%;
-                
                 display: flex;
                 padding: 10px 15px;
                 &__description {
-                    width: 280px;
+                    width: 85%;
                     h3 {
                         width: 100%;
                         font-size: 1.2em;
@@ -92,7 +92,7 @@
                     justify-self: flex-end;
                     align-items: flex-end;
                     background-color: white;
-                    padding-left: 10px;
+                    padding: 0 10px;
                     strong {
                         color: $color-base-tertiary;
                         text-align: right;
@@ -101,7 +101,7 @@
                 &__icon {
                     background-color: $color-anim-tertiary;
                     margin: -10px -80px -10px 15px;
-                    width: 4rem;
+                    width: 20%;
                     display: flex;
                     align-items: center;
                     justify-content: center; 
@@ -114,7 +114,7 @@
             }
             &:hover{
                 .element__menu__description{
-                    width: 215px;
+                    width: 65%;
                     transition: all 0.4s ease-in-out ;
                 }
                 .fas{

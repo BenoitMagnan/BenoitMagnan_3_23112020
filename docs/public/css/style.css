@@ -71,7 +71,6 @@ h4 {
   transition: all 0.2s;
 }
 .button:hover {
-  background: linear-gradient(to bottom right, #FF79DA 0%, #9256dc 100%);
   opacity: 0.8;
 }
 
@@ -187,9 +186,11 @@ section h2 {
   left: -10px;
 }
 #fonctionnement li:hover {
-  background-color: #f4ebff;
+  transition: all 0.2s;
+  background-color: #f1eafb;
 }
 #fonctionnement li:hover i {
+  transition: all 0.5s;
   color: #9256dc;
 }
 #fonctionnement i {
@@ -336,6 +337,7 @@ footer i {
 #pages .menuTitre__text .heart .fas {
   position: absolute;
   top: 2px;
+  left: -1px;
 }
 #pages .container {
   margin: 45px 15px 0px;
@@ -370,7 +372,7 @@ footer i {
   padding: 10px 15px;
 }
 #pages .container .element__menu__description {
-  width: 280px;
+  width: 85%;
 }
 #pages .container .element__menu__description h3 {
   width: 100%;
@@ -392,7 +394,7 @@ footer i {
   justify-self: flex-end;
   align-items: flex-end;
   background-color: white;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 #pages .container .element__menu__price strong {
   color: #353535;
@@ -401,7 +403,7 @@ footer i {
 #pages .container .element__menu__icon {
   background-color: #98e2cf;
   margin: -10px -80px -10px 15px;
-  width: 4rem;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,7 +414,7 @@ footer i {
   transform: rotate(90deg);
 }
 #pages .container .element:hover .element__menu__description {
-  width: 215px;
+  width: 65%;
   transition: all 0.4s ease-in-out;
 }
 #pages .container .element:hover .fas {
