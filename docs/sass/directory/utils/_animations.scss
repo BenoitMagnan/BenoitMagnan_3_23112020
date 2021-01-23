@@ -1,0 +1,88 @@
+//HOVER FONCTIONNEMENT
+#fonctionnement{
+    li{
+        &:hover{
+            transition: all 0.2s;
+            background-color: lighten($color-anim-primary, 35%);
+            i{
+                transition: all 0.5s;
+                color: $color-anim-primary;
+            }
+        }
+    }
+}
+
+//HOVER HEART
+.heart{
+    &:hover{
+        .far{
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .fas{
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    }
+}
+
+//HOVER BUTTON
+.button {
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+
+// ANIMATIONS CARD
+
+//DEFINITION ANIMATION APPEAR
+$calculDelay : calc(var(--nth-child) * 150ms);
+
+@keyframes slide{
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+        }
+}
+// ANIMATION APPEAR + GREEN SLIDE + ROTATE
+#pages {
+    .container{
+        :nth-child(2) { --nth-child: 1 }
+        :nth-child(3) { --nth-child: 2 }
+        :nth-child(4) { --nth-child: 3 }
+        :nth-child(5) { --nth-child: 4 }
+        
+        .element {
+            &:hover{
+                .element{
+                &__menu{
+                    &__description {
+                    transition: all 0.4s ease-in-out;
+                    margin-right: -100px;
+                        h3, p{
+                            transition: all 0.4s ease-in-out;
+                            width: 55vw;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    &__icon .fas{
+                        transform: rotate(360deg);
+                        transition: all 0.4s ease-in-out 0.1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

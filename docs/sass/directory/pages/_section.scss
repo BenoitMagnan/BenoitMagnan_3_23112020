@@ -1,10 +1,10 @@
 #pages{
+    
     main {
         display: flex;
         flex-wrap: wrap;
         background-color: $color-base-primary;
     }
-
     
     section {
         width: 100%;
@@ -15,8 +15,8 @@
         }
     }
 
-
     .menuTitre {
+        
         &__text {
             background-color: $color-base-primary;
             width: 100%;
@@ -44,9 +44,8 @@
         }
     }
 
-
     .container {
-        padding: 45px 15px 0px;
+        padding: 45px 15px 5px;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -59,19 +58,21 @@
                 margin-top: 5px;
                 border-bottom: 3px solid $color-anim-tertiary;
             }
+            
         }
         
         .element {
             width: 100%;
-            height: 100%;
+            height: auto;
             margin: 10px 0;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            height: auto;
             background-color: white;
             overflow: hidden;
+            opacity:0;
+            animation: slide 1s $calculDelay forwards;
             &__menu{
                 width: 100%;
                 display: flex;
@@ -123,24 +124,6 @@
                     }
                 }
             }
-            &:hover{
-                .element__menu__description {
-                    transition: all 0.4s ease-in-out;
-                    margin-right: -100px;
-                    h3, p{
-                        transition: all 0.4s ease-in-out;
-                        width: 55vw;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-                }
-                .fas{
-                    transform: rotate(360deg);
-                    transition: all 0.4s ease-in-out 0.1s;
-                }
-            }
         }
     }
-    
 }

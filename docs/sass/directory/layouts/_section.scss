@@ -38,14 +38,6 @@ section {
             position: relative;
             left: -10px;
         }
-        &:hover{
-            transition: all 0.2s;
-            background-color: lighten($color-anim-primary, 35%);
-            i{
-                transition: all 0.5s;
-                color: $color-anim-primary;
-            }
-        }
     }
     i {
         font-size: 1.2em;

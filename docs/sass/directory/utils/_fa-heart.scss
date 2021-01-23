@@ -19,14 +19,4 @@
         bottom:0;
         opacity:0;
     }
-    &:hover{
-        .far{
-            opacity: 0;
-            transition: all 0.2s;
-        }
-        .fas{
-            opacity: 1;
-            transition: all 0.2s;
-        }
-    }
 }
