@@ -1,0 +1,183 @@
+@media only screen and (min-width: 1024px) {
+    //BUTTON
+    .button {
+        width: 15%;
+    }
+    
+    //INDEX HEADER
+    #logo{
+        img{
+            width: 250px;
+        }
+    }
+
+    #location {
+        font-size: 1.2em;
+            i{
+                position: relative;
+                left: -18px;
+            }
+    }
+    
+    nav {
+        width: 100%;
+        background-color: $color-base-secondary;
+        font-size: 1.2em;
+            h2 {
+                width: 15%;
+                padding-top: 40px;
+                margin: 0 auto 15px;
+            }
+            h3 {
+                padding: 10px 10px 0;
+            }
+    }
+
+
+    // INDEX SECTION
+    section {
+        .content {
+            width: 70%;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+    
+    #fonctionnement {
+        ol {
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        li {
+            width: 300px;
+            flex-direction: row;
+            font-size: 1em;
+            font-weight: 500;
+            margin: 20px;
+            &::before {
+                padding: 2px 8px;
+                left: -14px;
+            }
+        }
+    }
+    
+    #restaurant {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .element{
+            width: 48.5%;
+        }
+    }
+
+
+    //PAGE HEADER
+    #pages {
+        header {
+            nav {
+                width: 100%;
+                padding: 20px 0;
+                a {
+                    left: 50px;
+                }
+                img {
+                    width: 250px;
+                }
+                i {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+    //PAGE SECTION
+        section {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            img{
+                max-height: 400px;
+            }
+        }
+
+        .menuTitre {
+            &__text {
+                width: 50%;
+                margin: 0 auto;
+                h1 {
+                    padding: 0 0 0 40px;
+                }
+                .heart {
+                    margin-right: 60px;
+                    & .fas{
+                        left: -0.7px;
+                    }
+                }
+            }
+        }
+
+        .container {
+            width: 25%;
+            min-width: 350px;
+            margin: 0 auto;
+        
+        .element {
+            width: 100%;
+            min-width: 350px;
+            &__menu{
+                &__price{
+                    padding-left: 15px;
+                }
+            }
+            &:hover{
+                .element{
+                    &__menu{
+                        &__description {
+                        transition: all 0.4s ease-in-out;
+                        margin-right: -115px;
+                            h3, p{
+                                transition: all 0.4s ease-in-out;
+                                width: 60%;
+                                margin-right: 15px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        &__icon .fas{
+                            transform: rotate(360deg);
+                            transition: all 0.4s ease-in-out 0.1s;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+
+        .button {
+            width: 15%;
+        }
+    }
+
+    //INDEX FOOTER
+    footer {
+        .content {
+            width: 70%;
+            margin: 0 auto;
+        }
+        h4, h4 a{
+            font-size: 1.2em;
+            margin: 0 0 20px 5px;
+        }
+        ul li{
+            margin:0 0 10px 10px;
+        }
+    }
+    
+}

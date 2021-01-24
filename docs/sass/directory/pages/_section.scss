@@ -1,9 +1,8 @@
 #pages{
-    
+    background-color: $color-base-primary;
     main {
         display: flex;
         flex-wrap: wrap;
-        background-color: $color-base-primary;
     }
     
     section {
@@ -16,7 +15,6 @@
     }
 
     .menuTitre {
-        
         &__text {
             background-color: $color-base-primary;
             width: 100%;
@@ -76,20 +74,25 @@
             &__menu{
                 width: 100%;
                 display: flex;
-                padding: 10px 0 15px 15px;
+                padding: 0;
                 &__description {
                     width: 100%;
+                    padding: 10px;
+                    margin: 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                     h3 {
-                        width: 95%;
+                        padding-bottom: 5px;
+                        width: 90%;
                         font-size: 1.2em;
                         font-weight: 700;
-                        padding-bottom: 5px;
                         overflow: hidden;
                         white-space: wrap;
                         text-overflow: ellipsis; 
                     }
                     p {
-                        width: 95%;
+                        width: 90%;
                         font-weight: 300;
                         overflow: hidden;
                         white-space: nowrap;
@@ -100,8 +103,9 @@
                     display: flex;
                     justify-self: flex-end;
                     align-items: flex-end;
-                    margin-left: -15px;
-                    padding: 0 15px 0 5px;
+                    z-index: 1;
+                    margin-left: -30px;
+                    padding: 0 15px 10px 0px;
                     background-color: white;
                     strong {
                         color: $color-base-tertiary;
@@ -109,7 +113,6 @@
                     }
                 }
                 &__icon {
-                    display: none;
                     background-color: $color-anim-tertiary;
                     margin: -10px 0 -15px 0px;
                     margin-right: -65px;
@@ -125,5 +128,12 @@
                 }
             }
         }
+    }
+
+    .button {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 35px;
     }
 }

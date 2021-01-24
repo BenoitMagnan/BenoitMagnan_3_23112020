@@ -1,9 +1,12 @@
+//COLOR FONT
+@import "./directory/utils/colors.scss";
+@import "./directory/utils/font.scss";
+
+
 // BASE
 @import "./directory/base/base.scss";
 
 // UTILS
-@import "./directory/utils/colors.scss";
-@import "./directory/utils/font.scss";
 @import "./directory/utils/variables.scss";
 @import "./directory/utils/button.scss";
 @import "./directory/utils/fa-heart.scss";
@@ -18,3 +21,6 @@
 //PAGES
 @import "./directory/pages/header.scss";
 @import "./directory/pages/section.scss";
+
+// BASE RESPONSIVE
+@import "./directory/base/responsive.scss";
