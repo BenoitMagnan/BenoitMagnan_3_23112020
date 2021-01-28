@@ -1,7 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    @include reset;
 }
 
 body {
@@ -11,14 +9,12 @@ body {
 
 img {
     width: 100%;
-    display: flex;
     object-fit: cover;
 }
 
-ul {
+ul, ol {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    @include reset;
 }
 
 a{

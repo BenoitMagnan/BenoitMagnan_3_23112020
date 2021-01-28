@@ -1,8 +1,7 @@
 header {
     background-color: $color-base-primary;
+    @include flexColumn;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 #logo{
@@ -24,8 +23,7 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     width: 100%;
     background-color: $color-base-secondary;
         h2 {

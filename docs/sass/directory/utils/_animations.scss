@@ -70,9 +70,7 @@ $calculDelay : calc(var(--nth-child) * 150ms);
                         h3, p{
                             transition: all 0.4s ease-in-out;
                             width: 60%;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
+                            @include ellipsis(nowrap);
                         }
                     }
                     &__icon .fas{

@@ -7,8 +7,7 @@
     
     section {
         width: 100%;
-        margin: 0;
-        padding: 0;
+        @include reset;
         img{
             max-height: 275px;
         }
@@ -44,19 +43,11 @@
 
     .container {
         padding: 45px 15px 5px;
-        display: flex;
-        flex-direction: column;
+        @include flexRow;
         overflow: hidden;
         &__titre {
             font-weight: 300;
-            &::after{
-                content:"";
-                display: block;
-                width: 40px;
-                margin-top: 5px;
-                border-bottom: 3px solid $color-anim-tertiary;
-            }
-            
+            @include titleUnderline;            
         }
         
         .element {
@@ -79,31 +70,23 @@
                     width: 100%;
                     padding: 10px;
                     margin: 0;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
                     h3 {
                         padding-bottom: 5px;
                         width: 90%;
                         font-size: 1.2em;
                         font-weight: 700;
-                        overflow: hidden;
-                        white-space: wrap;
-                        text-overflow: ellipsis; 
+                        @include ellipsis(wrap);
                     }
                     p {
                         width: 90%;
                         font-weight: 300;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
+                        @include ellipsis(nowrap);
                     }
                 }
                 &__price {
                     display: flex;
                     justify-self: flex-end;
                     align-items: flex-end;
-                    z-index: 1;
                     margin-left: -30px;
                     padding: 0 15px 10px 0px;
                     background-color: white;

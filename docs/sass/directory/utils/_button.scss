@@ -3,7 +3,7 @@
     margin: 35px auto;
     padding: 15px;
     border-radius: 50px;
-    box-shadow: 0 5px 10px $shadow;
+    @include shadow;
     text-decoration: none;
     text-align: center;
     background: linear-gradient(to bottom right, $color-anim-secondary 0%, $color-anim-primary 100%);

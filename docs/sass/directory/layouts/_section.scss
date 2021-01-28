@@ -8,8 +8,7 @@ section {
 
 #fonctionnement {
     ol {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         max-width: 325px;
         text-align: center;
         margin: 0 auto;
@@ -17,8 +16,7 @@ section {
         counter-reset: li;
     }
     li {
-        display: flex;
-        flex-direction: row;
+        @include flexRow;
         align-items: center;
         height: 70px;
         counter-increment: li;
@@ -27,7 +25,7 @@ section {
         font-size: 0.9em;
         font-weight: bold;
         background-color: $color-base-secondary;
-        box-shadow: 0 5px 10px $shadow;
+        @include shadow;
         &::before {
             content: counter(li);
             color: white;

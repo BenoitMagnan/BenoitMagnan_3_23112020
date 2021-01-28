@@ -1,6 +1,5 @@
 footer {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     background-color: $color-base-tertiary;
     padding: 25px;
     * {
