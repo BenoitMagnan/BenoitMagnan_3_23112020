@@ -240,6 +240,7 @@
         .element {
             width: 100%;
             min-width: 350px;
+            max-height: 65px;
             &__menu{
                 &__price{
                     padding-left: 15px;

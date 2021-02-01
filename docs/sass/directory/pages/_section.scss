@@ -61,7 +61,8 @@
             background-color: white;
             overflow: hidden;
             opacity:0;
-            animation: slide 1s $calculDelay forwards;
+            animation: slide 1s $calculDelay;
+            animation-fill-mode: forwards;
             &__menu{
                 width: 100%;
                 display: flex;
@@ -75,7 +76,7 @@
                         width: 90%;
                         font-size: 1.2em;
                         font-weight: 700;
-                        @include ellipsis(wrap);
+                        @include ellipsis(normal);
                     }
                     p {
                         width: 90%;
