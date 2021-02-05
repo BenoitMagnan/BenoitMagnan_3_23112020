@@ -18,7 +18,7 @@
     }
     &--new {
         background-color: $color-anim-tertiary;
-        color: $color-anim-tertiary-2;
+        color: darken($color-anim-tertiary, 40%);
         padding: 7.5px 15px;
         border-radius: 2px;
         text-align: center;

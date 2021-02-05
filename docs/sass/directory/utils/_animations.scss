@@ -50,7 +50,9 @@
 // ANIMATIONS CARD
 
 //DEFINITION ANIMATION APPEAR
-$calculDelay : calc(var(--nth-child) * 150ms);
+$object: var(--nth-child);
+$delay : 150ms;
+$calculDelay : calc(#{$object} * #{$delay});
 
 @keyframes slide{
     0% {

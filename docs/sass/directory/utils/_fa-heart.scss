@@ -8,10 +8,11 @@
         background: linear-gradient(to bottom, $color-anim-primary 0%, $color-anim-secondary 100%);
         background:-moz-linear-gradient(bottom, $color-anim-primary 0%, $color-anim-secondary 100%); 
         background: -webkit-linear-gradient(top, $color-anim-primary 0%, $color-anim-secondary 100%); 
+        background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color:transparent;
+        color:transparent;
         position: absolute;
         top: 0;
         left:0;
