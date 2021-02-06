@@ -1,9 +1,29 @@
+@keyframes cog {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
 $cogDuration: 1000ms;
 $iteration: 3;
 $fadeOut: $cogDuration * $iteration;
 
 @function loadingColor($opacity) {
-    @return rgba($color-anim-primary, $opacity)
+    @return rgba($color-anim-primary, $opacity);
 }
 
 .loading {
@@ -28,25 +48,5 @@ $fadeOut: $cogDuration * $iteration;
         display: flex;
         justify-content: space-evenly;
         animation: cog $cogDuration backwards $iteration ease-in-out;
-    }
-} 
-
-@keyframes cog {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes fadeOut {
-    0%{
-        visibility: visible;
-        opacity: 1;
-    }
-    100%{
-        visibility: hidden;
-        opacity: 0;
     }
 }
